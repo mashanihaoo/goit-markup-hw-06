@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="container container-header">
-            <a class="logo" href="./index.html">Web<span class="logo logo-studio">Studio</span></a>
+            <a class="logo" href="./index.html">Web<span class="logo-studio logo ">Studio</span></a>
             <button class="mobile-menu-open-button" type="button">
                 <svg class="icon-mobile-menu-open-button" width="24" height="24" aria-label="mobile menu open icon">
                     <use href="./images/icons.svg#icon-burger"></use>
@@ -26,15 +26,15 @@
 
                 <ul class="nav-list">
                     <li class="nav-list-item">
-                        <a class="nav-link-current" href="./index.html">Studio</a>
+                        <a class="nav-link  active nav-link-text" href="./index.html">Studio</a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="">Portfolio</a>
+                        <a class="nav-link nav-link-text" href="">Portfolio</a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="">Contacts</a>
+                        <a class="nav-link nav-link-text" href="">Contacts</a>
                     </li>
                 </ul>
 
@@ -44,35 +44,40 @@
             <address class="address">
                 <ul class="address-list">
                     <li class="adress-list-item">
-                        <a class="address-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li>
-                        <a class="address-item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    <li class="adress-list-item">
+                        <a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
+            <button class="mobile-menu-open-button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
     <main>
-        <!--Hero section
-        <section class="hero-section">
-            <div class="hero-container">
-                <h1 class="main-title">Effective Solutions for Your Business</h1>
+        <!--Hero section-->
+        <section class="hero">
+            <div class="hero-wrap container">
+                <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="order-button" type="button" data-modal-open>
                     Order Service</button>
             </div>
-        </section>-->
+        </section>
 
 
-        <!--Benefits section
-        <section class="benefits-section">
-            <div class="container">
-                <h2 class="visually-hidden">Our benefits</h2>
+        <!--Benefits section-->
+        <section class="section benefits">
+            <div class="benefits-wrap container">
+                <h2 class="benefits-title visually-hidden">Our benefits</h2>
                 <ul class="benefits-list">
                     <li class="benefits-list-item">
-                        <div class="benefits-icons-container">
-                            <svg class="benefits-icons" width="64" height="64">
+                        <div class="benefits-icon-container">
+                            <svg class="benefits-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-strategy"></use>
                             </svg>
                         </div>
@@ -81,8 +86,8 @@
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="benefits-list-item">
-                        <div class="benefits-icons-container">
-                            <svg class="benefits-icons" width="64" height="64">
+                        <div class="benefits-icon-container">
+                            <svg class="benefits-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-punctuality"></use>
                             </svg>
                         </div>
@@ -93,8 +98,8 @@
                             time.</p>
                     </li>
                     <li class="benefits-list-item">
-                        <div class="benefits-icons-container">
-                            <svg class="benefits-icons" width="64" height="64">
+                        <div class="benefits-icon-container">
+                            <svg class="benefits-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diligence"></use>
                             </svg>
                         </div>
@@ -105,8 +110,8 @@
                             risk.</p>
                     </li>
                     <li class="benefits-list-item">
-                        <div class="benefits-icons-container">
-                            <svg class="benefits-icons" width="64" height="64">
+                        <div class="benefits-icon-container">
+                            <svg class="benefits-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-technologies"></use>
                             </svg>
                         </div>
@@ -119,7 +124,7 @@
                     </li>
                 </ul>
             </div>
-        </section>-->
+        </section>
 
         <!--Team section
         <section class="team-section">
@@ -308,7 +313,7 @@
 
                 </ul>
             </div>
-        </section>-->
+        </section>
 
         <!--Portfolio section
         
@@ -547,7 +552,7 @@
     </div>-->
     <!-- MOBILE MENU-->
     <div class="mobile-menu-wrapper">
-        <dic class="container mobile-menu-container">
+        <div class="container mobile-menu-container">
             <button class="mobile-menu-close-button" type="button">
                 <svg class="mobile-menu-close-button-icon" width="24" height="24" aria-label="mobile menu close icon">
                     <use href="./images/icons.svg#icon-close"></use>
@@ -600,7 +605,7 @@
                     </a>
                 </li>
             </ul>
-        </dic>
+        </div>
 
 
     </div>
