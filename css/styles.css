@@ -822,11 +822,28 @@ fieldset {
 .footer-section{
     background-color: #2e2f42;
         padding: 100px 0;
+        width: 320px;
+            height: 664px;
+}
+
+@media screen(min-width:768px) {
+    .footer-section{
+    width: 768px;
+        height: 456px;
+    }
+}
+
+@media screen(min-width:1158px) {
+    .footer-section{
+        width: 1440px;
+            height: 312px;
+    }
 }
 
 .footer-container{
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .footer-logo-container{
