@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="container-header container ">
-            <a class="logo" href="./index.html">Web<span class="logo-studio logo ">Studio</span></a>
+            <a class="logo" href="./index.html">Web<span class="logo-studio ">Studio</span></a>
             <button class="mobile-menu-open-button" type="button">
                 <svg class="icon-mobile-menu-open-button" width="24" height="24" aria-label="mobile menu open icon">
                     <use href="./images/icons.svg#icon-burger"></use>
@@ -51,11 +51,7 @@
                     </li>
                 </ul>
             </address>
-            <button class="mobile-menu-open-button" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="menu-toggle-icon" width="32" height="22">
-                    <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
-                </svg>
-            </button>
+
         </div>
     </header>
 
@@ -130,7 +126,7 @@
         <section class="team-section section">
             <div class="team-wrap container">
                 <h2 class="team-title">Our Team</h2>
-                <ul class="team-list color list">
+                <ul class="team-list list">
                     <li class="team-list-item">
                         <img srcset="" src="./images/marc.jpg" alt="Mark Guerrero's photo" width="264" height="260">
                         <div class="team-item-wrapper">
@@ -153,7 +149,7 @@
                                     </a>
                                 </li>
 
-                                <li class="person-socials-round-container">
+                                <li class="person-socials-list-item">
                                     <a class="person-socials-link" href="" target="_blank">
                                         <svg class="team-icons" width="16" height="16">
                                             <use href="./images/icons.svg#icon-facebook"></use>
@@ -315,8 +311,8 @@
             </div>
         </section>
 
-        <!--Portfolio section
-        
+        <!--Portfolio section-->
+
         <section class="portfolio-section">
             <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
@@ -324,11 +320,15 @@
                     <li class="portfolio-list-item">
 
                         <div class="app-image-container">
-                            <img src="./images/banking-app.jpg" alt="Banking App photo" width="360">
+                            <picture>
+                                <source>
+                                <img src="./images/banking-app.jpg" alt="Banking App photo" width="360">
+                            </picture>
                             <p class="paragraph-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
+
                         <div class="app-name-container">
                             <h3 class="tool-title">Banking App</h3>
                             <p class="tool-type">App</p>
@@ -417,13 +417,13 @@
 
                 </ul>
             </div>
-        </section>-->
+        </section>
 
     </main>
-    <!--Footer
+    <!--Footer-->
     <footer class="footer-section">
         <div class="footer-container container">
-            <div class="footer-logo-p-container">
+            <div class="footer-logo-container">
                 <a class="logo-in-footer" href="./index.html">
                     Web<span class="logo-footer">Studio</span></a>
                 <p class="footer-paragraph">Increase the flow of customers and sales for your business with digital
@@ -466,7 +466,7 @@
 
             <div class="footer-modal">
                 <p class="footer-modal-paragraph">Subscribe</p>
-                <form class="subscribe-form">
+                <form class="subscribe-form" name="subscribe-form">
                     <label for="footer-modal-input" class="footer-modal-label">
                         <input class="footer-modal-input" id="footer-modal-input" name="footer-modal-input" type="email"
                             placeholder="E-mail">
@@ -483,9 +483,9 @@
 
 
         </div>
-    </footer>-->
+    </footer>
 
-    <!--Modal
+    <!--Modal-->
 
     <div class="backdrop is-open">
         <div class="modal">
@@ -549,7 +549,7 @@
 
         </div>
 
-    </div>-->
+    </div>
     <!-- MOBILE MENU-->
     <div class="mobile-menu-wrapper">
         <div class="mobile-menu-container container ">
