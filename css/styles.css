@@ -100,6 +100,12 @@ fieldset {
     
 }
 
+@media screem and (min-width:768px){
+    .logo{
+        margin-right: 120px;
+    }
+}
+
 .logo-studio{
     color: #2E2F42;
 
@@ -114,9 +120,7 @@ fieldset {
         display: flex;
         gap: 40px;
     }
-    .header-nav{
-        margin-left: 120px;
-    }
+    
 }
 @media only screen and (min-width: 1158px) {
     .nav-list {
@@ -253,53 +257,133 @@ fieldset {
     color: #404bbf;
 }
 
-.mobile-menu-open-button {
-    margin-left: auto;
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    stroke: #2F2F37;
-    line-height: 0;
+.button-open-menu{
+padding: 0;
+line-height: 0;
+background-color: transparent;
+cursor: pointer;
+border: none;
 }
 
-.mobile-menu-wrapper {
+.mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99999999;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
     height: 100%;
-    background-color: #FCFCFC;
-    transform: translateX(100%);
-    transition: transform;
+
+    padding: 72px 16px 40px;
+
+    background-color: #fff;
+    transition: transform 300ms ease-out;
 }
 
-.mobile-menu-wrapper.is-open {
-    transform: translateX(0%);
+.mobile-menu.is-open {
+    transform: translateX(0);
+    transition-timing-function: ease-in;
 }
 
-.mobile-menu-container {
-    position: relative;
-}
-
-.mobile-menu-close-button {
+.mobile-menu-btn {
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-icon {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
+    background-color: #404bbf;
     border-color: transparent;
     border: none;
-    padding: 0;
-    line-height: 0;
-    stroke: #2E2F42;
-    background-color: #E7E9FC;
-    border-radius: 4px;
+}
+
+.mobile-menu-btn:hover .mobile-menu-icon,
+.mobile-menu-btn:focus .mobile-menu-icon {
+    fill: #ffffff;
+}
+
+.mobile-menu-nav {
+    margin-bottom: 168px;
+}
+
+.mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.mobile-menu-link.current {
+    color: #404bbf;
+}
+
+.mobile-menu-contacts {
+    margin-bottom: 48px;
+}
+
+.mobile-menu-contacts>li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-menu-contacts a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mobile-menu-contacts>li:first-child a {
+    color: #4d5ae5;
+}
+
+.mobile-menu-socials {
+    display: inline-flex;
+    gap: 40px;
+}
+
+@media screen and(max-width:767px)
+   
+
+    
+
+@media screen and (min-width:768px){
+    
 }
 /*HERO*/
 .hero{
     max-width: 1600px;
     margin: 0 auto;
-    padding: 188px 0;
+    padding: 188px;
     background-image: linear-gradient(to bottom,
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
@@ -363,17 +447,13 @@ fieldset {
 
 @media only screen and (min-width: 768px) {
     .hero {
-        padding: 112px 0;
-    }
-
-    .mobile-menu-open-button{
-        display: none;
+        padding: 112px;
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .hero {
-        padding: 188px 0;
+        padding: 188px;
         max-width: 1440px;
     }
 }
@@ -402,7 +482,7 @@ fieldset {
 }
 @media only screen and (min-width: 320px) {
     .hero {
-      padding: 72px 52px;
+      padding: 72px;
 }
 
 }
@@ -532,7 +612,7 @@ fieldset {
 
 
 @media only screen and (max-width: 1158px) {
-    .benefits-icon {
+    .benefits-icon-container{
         display: none;
     }
 }
@@ -1111,6 +1191,12 @@ fieldset {
      border-radius: 4px;
      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
      padding: 72px 24px 24px 24px;
+ }
+
+ @media screen and (max-width:320px){
+    .modal{
+        width: 288px;
+    }
  }
 
  .modal-close-button {
