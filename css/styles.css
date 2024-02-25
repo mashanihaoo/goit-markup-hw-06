@@ -1009,11 +1009,6 @@ fieldset {
 }
 
 
-
-
-
-
-
 .footer-modal-input{
     font-weight: 400;
     font-size: 12px;
@@ -1031,27 +1026,39 @@ fieldset {
 }
 
 
-.footer-modal-input:placeholder{
+.footer-modal-input::placeholder{
     color: rgb(255, 255, 255);
     border: none;
 }
 
+@media screen and (min-width: 768px) {
+    .footer-modal-input {
+        width: 264px;
+    }
+}
+
+
 .footer-modal-button{
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    cursor: pointer;
     background-color: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    min-width: 165px;
+    padding: 8px 24px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-modal-button:hover,
@@ -1062,6 +1069,7 @@ fieldset {
  .footer-modal-icon{
     margin-left: 16px;
     fill: #fff;
+    margin-left: 16px;
  }
 
  .backdrop {
@@ -1314,14 +1322,3 @@ fieldset {
     background-color: #404BBF;
 }
 
-
-
-/*--END MOBILE HEADER STYLE-- */
-
-/*TABLET HEADER STYLE */
-
-/*--END TABLET HEADER STYLE-- */
-
-/*DESKTOP HEADER STYLE */
-
-/*--END DESKTOP HEADER STYLE-- */
