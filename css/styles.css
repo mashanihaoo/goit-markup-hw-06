@@ -253,7 +253,6 @@ fieldset {
 }
 
 .mobile-menu-open-button {
-    display: none;
     margin-left: auto;
     margin-left: auto;
     border: none;
@@ -364,6 +363,10 @@ fieldset {
 @media only screen and (min-width: 768px) {
     .hero {
         padding: 112px 0;
+    }
+
+    .mobile-menu-open-button{
+        display: none;
     }
 }
 
