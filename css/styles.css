@@ -643,11 +643,7 @@ fieldset {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
-    .team-list-item {
-        flex-basis: calc((100% - 24px) / 2);
-    }
-}
+
 
 @media only screen and (min-width: 1158px) {
     .team-list-item {
