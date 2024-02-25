@@ -585,16 +585,15 @@ fieldset {
 }
 
 
-@media only screen and (min-width: 768px) {
-    .team-wrap {
-        max-width: 584px;
+@media screen and (max-width: 1157px) {
+    .team-section {
+        padding: 96px 0;
     }
 }
 
-@media only screen and (min-width: 1158px) {
-    .team-wrap {
-        padding-right: 15px;
-        padding-left: 15px;
+@media screen and (min-width: 1158px) {
+    .team-section {
+        padding: 120px 0;
     }
 }
 
@@ -619,7 +618,18 @@ fieldset {
 
 @media only screen and (min-width: 768px) {
     .team-list {
-        gap: 72px 24px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team__list {
+        flex-wrap: nowrap;
+        gap: 24px;
     }
 }
 
@@ -640,7 +650,7 @@ fieldset {
 
 @media only screen and (min-width: 1158px) {
     .team-list-item {
-        flex-basis: calc((100% - 3 * 24px) / 4);
+        flex-basis: calc((100% - 72px) / 4);
         margin-bottom: 0;
     }
 }
