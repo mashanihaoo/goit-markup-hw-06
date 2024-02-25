@@ -180,6 +180,7 @@ fieldset {
         display: flex;
         flex-wrap: wrap;
         font-style: normal;
+        flex-direction: column;
     }
 }
 
@@ -198,9 +199,8 @@ fieldset {
 
 @media only screen and (min-width: 768px) {
     .address-list {
-        display: flex;
-        flex-wrap: wrap;
         gap: 12px;
+        align-items: center;
     }
 
     .address-item:last-child {
@@ -231,7 +231,7 @@ fieldset {
    
 @media only screen and (min-width: 768px) {
     .address-link {
-        display: block;
+      padding-bottom: 12px;
         font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
@@ -614,7 +614,7 @@ fieldset {
 
 .team-list {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: center;
     gap: 72px;
 }
